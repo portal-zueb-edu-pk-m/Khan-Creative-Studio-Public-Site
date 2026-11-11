@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khan Creative Studio | Elite Digital & Creative Agency in Pakistan</title>
+  <meta name="description" content="Bespoke website development, graphic design in Pakistan, branding, AI video advertisements, and digital marketing by Khan Creative Studio.">
+  <link rel="canonical" href="https://khancreativestudio.com/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://khancreativestudio.com/">
+  <meta property="og:title" content="Khan Creative Studio | Elite Digital & Creative Agency">
+  <meta property="og:description" content="Crafting digital masterpieces that elevate modern brands. Custom websites, branding, AI ads, and creative solutions.">
+  <meta property="og:image" content="https://khancreativestudio.com/assets/logo.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Khan Creative Studio | Elite Digital & Creative Agency">
+  <meta name="twitter:description" content="Crafting digital masterpieces that elevate modern brands.">
+  <meta name="twitter:image" content="https://khancreativestudio.com/assets/logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Supabase CDN Client -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="kcs-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand-logo-wrap" aria-label="Khan Creative Studio Home">
+        <img src="assets/logo.png" alt="Khan Creative Studio Official Logo" class="brand-logo-img">
+      </a>
+
+      <nav class="nav-links" id="main-nav-links">
+        <a href="index.html" class="nav-item active">Home</a>
+        <a href="about.html" class="nav-item">About</a>
+        <a href="services.html" class="nav-item">Services</a>
+        <a href="package.html" class="nav-item">Packages</a>
+        <a href="reviews.html" class="nav-item">Reviews</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="cart.html" class="cart-icon-btn" aria-label="Shopping Cart">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          <span class="cart-counter" style="display: none;">0</span>
+        </a>
+        <a href="contact.html" class="btn btn-primary btn-sm d-none-mobile">Get Started</a>
+        <button class="mobile-toggle-btn" aria-label="Toggle Navigation Menu">
+          <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" style="position: relative; overflow: hidden; padding: 110px 0 90px 0; background: linear-gradient(180deg, #F9FAFB 0%, #EDE9FE 100%);">
+    <div class="hero-glow-blob blob-purple"></div>
+    <div class="hero-glow-blob blob-mint"></div>
+    
+    <div class="container" style="position: relative; z-index: 1;">
+      <div style="display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 48px; align-items: center;">
+        <div>
+          <span class="section-tag mint animate-fade-in">✦ Premium Creative & Digital Solutions</span>
+          <h1 class="animate-fade-up" style="margin-bottom: 20px;" data-hero-headline>Crafting Digital Masterpieces That Elevate Your Brand</h1>
+          <p class="animate-fade-up" style="font-size: 1.18rem; margin-bottom: 36px; max-width: 580px;" data-hero-subheadline>
+            We engineer bespoke digital platforms, distinctive brand identities, and high-impact visual campaigns tailored for modern brands.
+          </p>
+          <div class="hero-actions animate-fade-up" style="display: flex; gap: 16px; align-items: center; flex-wrap: wrap;">
+            <a href="services.html" class="btn btn-primary btn-lg" data-hero-primary-cta>Explore Services</a>
+            <a href="contact.html" class="btn btn-outline btn-lg">Book a Consultation</a>
+          </div>
+
+          <!-- Agency Trust Indicators -->
+          <div style="display: flex; gap: 32px; margin-top: 48px; padding-top: 32px; border-top: 1px solid rgba(76, 29, 149, 0.12); flex-wrap: wrap;">
+            <div>
+              <div style="font-family: var(--font-heading); font-size: 1.7rem; font-weight: 800; color: var(--color-dark-purple);">100%</div>
+              <div style="font-size: 0.85rem; color: var(--color-secondary-text);">Bespoke Work</div>
+            </div>
+            <div>
+              <div style="font-family: var(--font-heading); font-size: 1.7rem; font-weight: 800; color: var(--color-dark-purple);">Pixel-Perfect</div>
+              <div style="font-size: 0.85rem; color: var(--color-secondary-text);">Design Standards</div>
+            </div>
+            <div>
+              <div style="font-family: var(--font-heading); font-size: 1.7rem; font-weight: 800; color: var(--color-dark-purple);">End-to-End</div>
+              <div style="font-size: 0.85rem; color: var(--color-secondary-text);">Digital Execution</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Agency Visual -->
+        <div class="hero-visual-card animate-float" style="background: var(--color-white); border: 2px solid var(--color-borders); border-radius: var(--radius-lg); padding: 40px; box-shadow: var(--shadow-lg); text-align: center; position: relative;">
+          <div style="display: flex; justify-content: center; margin-bottom: 24px;">
+            <img src="assets/logo.png" alt="Khan Creative Studio" style="max-height: 180px; object-fit: contain;">
+          </div>
+          <div style="background: var(--color-lavender-bg); border-radius: var(--radius-md); padding: 18px; text-align: left; margin-bottom: 16px;">
+            <div style="font-size: 0.78rem; font-weight: 700; text-transform: uppercase; color: var(--color-primary-purple); margin-bottom: 4px;">Verified Creative Partner</div>
+            <div style="font-family: var(--font-heading); font-weight: 700; color: var(--color-dark-purple); font-size: 1.05rem;">Khan Creative Studio</div>
+            <p style="font-size: 0.86rem; color: var(--color-secondary-text); margin-top: 4px; margin-bottom: 0;">Specialized in Web Development, Graphic Design, AI Ads & Brand Strategy.</p>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; font-weight: 600; color: var(--color-dark-purple);">
+            <span>Based in Pakistan</span>
+            <span style="color: var(--color-dark-mint); display: flex; align-items: center; gap: 4px;">● Global Client Delivery</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Services Section -->
+  <section class="section-pad" id="services">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Core Capabilities</span>
+        <h2 class="section-title">Specialized Creative & Digital Services</h2>
+        <p class="section-subtitle">Tailored digital engineering and brand visual solutions designed to accelerate growth.</p>
+      </div>
+
+      <div class="services-grid" id="featured-services-grid">
+        <!-- Dynamically populated from Supabase -->
+        <div class="service-card skeleton" style="height: 320px;"></div>
+        <div class="service-card skeleton" style="height: 320px;"></div>
+        <div class="service-card skeleton" style="height: 320px;"></div>
+      </div>
+
+      <div style="text-align: center; margin-top: 48px;">
+        <a href="services.html" class="btn btn-outline btn-lg">View All Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section-pad" style="background-color: var(--color-lavender-bg);">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">The Studio Standard</span>
+        <h2 class="section-title">Why Khan Creative Studio</h2>
+        <p class="section-subtitle">We merge imaginative creative flair with rigorous technical engineering.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px;">
+        <div style="background: var(--color-white); padding: 32px; border-radius: var(--radius-md); border: 1px solid var(--color-borders);">
+          <div style="font-size: 2rem; color: var(--color-primary-purple); margin-bottom: 16px;">✦</div>
+          <h4 style="margin-bottom: 10px;">Creative Quality</h4>
+          <p style="font-size: 0.94rem;">Uncompromising visual and architectural polish across every brand asset and line of code.</p>
+        </div>
+        <div style="background: var(--color-white); padding: 32px; border-radius: var(--radius-md); border: 1px solid var(--color-borders);">
+          <div style="font-size: 2rem; color: var(--color-primary-purple); margin-bottom: 16px;">⚡</div>
+          <h4 style="margin-bottom: 10px;">Modern Digital Solutions</h4>
+          <p style="font-size: 0.94rem;">State-of-the-art web performance, AI video generation, and responsive user experiences.</p>
+        </div>
+        <div style="background: var(--color-white); padding: 32px; border-radius: var(--radius-md); border: 1px solid var(--color-borders);">
+          <div style="font-size: 2rem; color: var(--color-primary-purple); margin-bottom: 16px;">🎯</div>
+          <h4 style="margin-bottom: 10px;">Brand Consistency</h4>
+          <p style="font-size: 0.94rem;">Unified identity systems that safeguard your visual language across all digital channels.</p>
+        </div>
+        <div style="background: var(--color-white); padding: 32px; border-radius: var(--radius-md); border: 1px solid var(--color-borders);">
+          <div style="font-size: 2rem; color: var(--color-primary-purple); margin-bottom: 16px;">💬</div>
+          <h4 style="margin-bottom: 10px;">Professional Communication</h4>
+          <p style="font-size: 0.94rem;">Direct milestone tracking, prompt responses, and transparent project timelines.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Packages Section -->
+  <section class="section-pad" id="packages">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Value Bundles</span>
+        <h2 class="section-title">Transparent Agency Packages</h2>
+        <p class="section-subtitle">Comprehensive packages structured to give your business rapid, high-impact results.</p>
+      </div>
+
+      <div class="packages-grid" id="featured-packages-grid">
+        <!-- Dynamically populated from Supabase -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Workflow Section -->
+  <section class="section-pad" style="background-color: var(--color-white);">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Our Methodology</span>
+        <h2 class="section-title">The Creative Workflow</h2>
+        <p class="section-subtitle">A structured 5-step delivery process ensuring clarity, precision, and excellence.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; position: relative;">
+        <div style="padding: 24px; border: 1px solid var(--color-borders); border-radius: var(--radius-md); background: var(--color-soft-bg);">
+          <div style="font-family: var(--font-heading); font-size: 2rem; font-weight: 800; color: var(--color-mint-accent);">01</div>
+          <h4 style="margin-top: 8px; margin-bottom: 8px;">Discuss</h4>
+          <p style="font-size: 0.88rem;">We discover your business objectives, target audience, and functional criteria.</p>
+        </div>
+        <div style="padding: 24px; border: 1px solid var(--color-borders); border-radius: var(--radius-md); background: var(--color-soft-bg);">
+          <div style="font-family: var(--font-heading); font-size: 2rem; font-weight: 800; color: var(--color-mint-accent);">02</div>
+          <h4 style="margin-top: 8px; margin-bottom: 8px;">Plan</h4>
+          <p style="font-size: 0.88rem;">We blueprint the creative direction, site architecture, and campaign strategy.</p>
+        </div>
+        <div style="padding: 24px; border: 1px solid var(--color-borders); border-radius: var(--radius-md); background: var(--color-soft-bg);">
+          <div style="font-family: var(--font-heading); font-size: 2rem; font-weight: 800; color: var(--color-mint-accent);">03</div>
+          <h4 style="margin-top: 8px; margin-bottom: 8px;">Design & Build</h4>
+          <p style="font-size: 0.88rem;">Bespoke creation of visual assets, responsive interfaces, and digital campaigns.</p>
+        </div>
+        <div style="padding: 24px; border: 1px solid var(--color-borders); border-radius: var(--radius-md); background: var(--color-soft-bg);">
+          <div style="font-family: var(--font-heading); font-size: 2rem; font-weight: 800; color: var(--color-mint-accent);">04</div>
+          <h4 style="margin-top: 8px; margin-bottom: 8px;">Review</h4>
+          <p style="font-size: 0.88rem;">Collaborative feedback and iterative refinement according to your revision cycle.</p>
+        </div>
+        <div style="padding: 24px; border: 1px solid var(--color-borders); border-radius: var(--radius-md); background: var(--color-soft-bg);">
+          <div style="font-family: var(--font-heading); font-size: 2rem; font-weight: 800; color: var(--color-mint-accent);">05</div>
+          <h4 style="margin-top: 8px; margin-bottom: 8px;">Deliver</h4>
+          <p style="font-size: 0.88rem;">Full production launch, source asset handover, and post-launch onboarding.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Approved Reviews -->
+  <section class="section-pad" style="background-color: var(--color-soft-bg);">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Client Feedback</span>
+        <h2 class="section-title">What Our Clients Say</h2>
+        <p class="section-subtitle">Real experiences from clients who scaled their brand with Khan Creative Studio.</p>
+      </div>
+
+      <div class="reviews-grid" id="homepage-reviews-grid">
+        <!-- Dynamically loaded from Supabase -->
+      </div>
+
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="reviews.html" class="btn btn-outline">Read All Client Reviews</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enquiry CTA Section -->
+  <section class="section-pad" style="background: linear-gradient(135deg, var(--color-dark-purple), var(--color-primary-purple)); color: var(--color-white); text-align: center;">
+    <div class="container" style="max-width: 800px;">
+      <span class="section-tag mint" style="background: rgba(127, 229, 211, 0.2); color: var(--color-mint-accent);">Ready to elevate?</span>
+      <h2 style="color: var(--color-white); margin-bottom: 20px;">Let's Build Something Extraordinary Together</h2>
+      <p style="color: #EDE9FE; font-size: 1.15rem; margin-bottom: 36px;">
+        Whether you require a bespoke website, complete brand identity, or AI video campaign, we are ready to bring your vision to life.
+      </p>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="contact.html" class="btn btn-mint btn-lg">Initiate Your Project</a>
+        <a href="services.html" class="btn btn-outline-white btn-lg">Browse Solutions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section style="background-color: var(--color-white); padding: 60px 0; border-bottom: 1px solid var(--color-borders);">
+    <div class="container" style="max-width: 720px; text-align: center;">
+      <h3 style="margin-bottom: 10px;">Stay Ahead with Creative & Digital Insights</h3>
+      <p style="margin-bottom: 24px;">Subscribe to our periodic newsletter for design trends, digital strategies, and agency updates.</p>
+      
+      <form class="newsletter-form" style="display: flex; gap: 12px; max-width: 520px; margin: 0 auto; flex-wrap: wrap;">
+        <input type="email" placeholder="Enter your business email" required class="form-control" style="flex: 1; min-width: 240px;">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Dynamic Footer -->
+  <footer class="kcs-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col-brand">
+          <img src="assets/logo.png" alt="Khan Creative Studio Logo" style="height: 50px; background: white; padding: 4px 8px; border-radius: 6px; display: inline-block;">
+          <p data-footer-desc>Khan Creative Studio is an elite digital and creative solutions agency delivering bespoke website development, graphic design, social media marketing, and visual content.</p>
+          <div class="footer-social-row">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">IG</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook">FB</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">LI</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="package.html">Packages</a></li>
+            <li><a href="reviews.html">Client Reviews</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-nav-list">
+            <li><a href="service.html?slug=website-development">Website Development</a></li>
+            <li><a href="service.html?slug=graphic-designing">Graphic Designing</a></li>
+            <li><a href="service.html?slug=logo-branding">Logo & Branding</a></li>
+            <li><a href="service.html?slug=social-media-management">Social Media Marketing</a></li>
+            <li><a href="service.html?slug=ai-video-advertisements">AI Video Ads</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Direct Contact</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <a href="mailto:khancreativestudio1@gmail.com" data-footer-email>khancreativestudio1@gmail.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <a href="tel:+923151342465" data-footer-phone>+92 315 1342465</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span data-footer-address>Lahore / Islamabad, Pakistan</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span data-current-year>2026</span> Khan Creative Studio. All Rights Reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="page.html?slug=privacy-policy">Privacy Policy</a>
+          <a href="page.html?slug=terms-and-conditions">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

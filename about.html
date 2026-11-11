@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Khan Creative Studio</title>
+  <meta name="description" content="Learn about Khan Creative Studio, our design ethos, mission, vision, and dedication to crafting high-impact digital solutions in Pakistan.">
+  <link rel="canonical" href="https://khancreativestudio.com/about.html">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="kcs-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand-logo-wrap">
+        <img src="assets/logo.png" alt="Khan Creative Studio" class="brand-logo-img">
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="about.html" class="nav-item active">About</a>
+        <a href="services.html" class="nav-item">Services</a>
+        <a href="package.html" class="nav-item">Packages</a>
+        <a href="reviews.html" class="nav-item">Reviews</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="cart.html" class="cart-icon-btn"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg><span class="cart-counter" style="display: none;">0</span></a>
+        <a href="contact.html" class="btn btn-primary btn-sm d-none-mobile">Get Started</a>
+        <button class="mobile-toggle-btn"><svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Header -->
+  <section style="background: linear-gradient(180deg, #F9FAFB 0%, #EDE9FE 100%); padding: 80px 0; border-bottom: 1px solid var(--color-borders);">
+    <div class="container" style="text-align: center; max-width: 800px;">
+      <span class="section-tag mint">Agency Profile</span>
+      <h1 style="margin-bottom: 16px;">Who We Are</h1>
+      <p style="font-size: 1.15rem;">Khan Creative Studio is an elite digital and creative solutions studio dedicated to transforming bold ideas into market-leading brand experiences.</p>
+    </div>
+  </section>
+
+  <!-- Studio Introduction & Vision -->
+  <section class="section-pad">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;">
+        <div>
+          <span class="section-tag">Our Vision & Mission</span>
+          <h2 style="margin-bottom: 20px;">Redefining Creative Standard for Modern Enterprises</h2>
+          <p>Founded on the principle that exceptional aesthetics must be backed by uncompromising digital engineering, Khan Creative Studio bridges the gap between imagination and measurable business outcomes.</p>
+          <p>We work with discerning entrepreneurs, corporate enterprises, and high-growth brands across Pakistan and globally to craft digital identities, high-speed web platforms, and cinematic advertising assets that command respect.</p>
+          
+          <div style="margin-top: 32px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div style="padding: 20px; background: var(--color-lavender-bg); border-radius: var(--radius-md);">
+              <h4 style="color: var(--color-primary-purple); margin-bottom: 6px;">Our Mission</h4>
+              <p style="font-size: 0.88rem; margin: 0;">To deliver flawless digital architecture, distinctive branding, and growth marketing that elevates our partners above the noise.</p>
+            </div>
+            <div style="padding: 20px; background: rgba(127, 229, 211, 0.25); border-radius: var(--radius-md);">
+              <h4 style="color: #0b6858; margin-bottom: 6px;">Our Vision</h4>
+              <p style="font-size: 0.88rem; margin: 0;">To be Pakistan's foremost creative and digital powerhouse, recognized for craftsmanship, reliability, and innovation.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: var(--color-white); border: 2px solid var(--color-borders); border-radius: var(--radius-lg); padding: 48px 36px; text-align: center; box-shadow: var(--shadow-md);">
+          <img src="assets/logo.png" alt="Khan Creative Studio Emblem" style="max-height: 220px; margin: 0 auto 32px auto; object-fit: contain;">
+          <h3 style="color: var(--color-dark-purple); margin-bottom: 12px;">Craftsmanship In Every Detail</h3>
+          <p style="font-size: 0.95rem; color: var(--color-secondary-text);">Every asset is custom-tailored. We believe in meticulous typographic hierarchy, bespoke code bases, and visual storytelling that resonates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Working Approach / Pillars -->
+  <section class="section-pad" style="background-color: var(--color-soft-bg);">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Principles</span>
+        <h2 class="section-title">Our Working Approach</h2>
+        <p class="section-subtitle">Core pillars that guide our creative and technical execution.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
+        <div class="service-card">
+          <div class="service-icon-box">01</div>
+          <h3 class="service-card-title">Strategic Alignment</h3>
+          <p class="service-card-desc">We never design in a vacuum. Every color choice, layout, and software architecture decision is driven by your brand's market positioning and audience psychology.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-box">02</div>
+          <h3 class="service-card-title">Technical Rigor</h3>
+          <p class="service-card-desc">No sluggish frameworks or bloat. We prioritize lightning-fast load times, semantic accessibility, mobile responsiveness, and clean code principles.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-box">03</div>
+          <h3 class="service-card-title">Authentic Partnership</h3>
+          <p class="service-card-desc">We operate as an extension of your leadership team. Regular updates, transparent milestone tracking, and committed post-launch support.</p>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 56px;">
+        <a href="contact.html" class="btn btn-primary btn-lg">Start a Conversation With Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="kcs-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col-brand">
+          <img src="assets/logo.png" alt="Khan Creative Studio Logo" style="height: 50px; background: white; padding: 4px 8px; border-radius: 6px; display: inline-block;">
+          <p data-footer-desc>Khan Creative Studio is an elite digital and creative solutions agency delivering bespoke website development, graphic design, social media marketing, and visual content.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="package.html">Packages</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-nav-list">
+            <li><a href="service.html?slug=website-development">Website Development</a></li>
+            <li><a href="service.html?slug=graphic-designing">Graphic Designing</a></li>
+            <li><a href="service.html?slug=logo-branding">Logo & Branding</a></li>
+            <li><a href="service.html?slug=social-media-management">Social Media Marketing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Direct Contact</h4>
+          <div class="footer-contact-item"><a href="mailto:khancreativestudio1@gmail.com" data-footer-email>khancreativestudio1@gmail.com</a></div>
+          <div class="footer-contact-item"><a href="tel:+923151342465" data-footer-phone>+92 315 1342465</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; <span data-current-year>2026</span> Khan Creative Studio. All Rights Reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="page.html?slug=privacy-policy">Privacy Policy</a>
+          <a href="page.html?slug=terms-and-conditions">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { initNavbar } from './js/navbar.js';
+    import { initFooter } from './js/footer.js';
+    initNavbar();
+    initFooter();
+  </script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Details | Khan Creative Studio</title>
+  <meta name="description" content="Detailed overview of creative and digital services by Khan Creative Studio.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="kcs-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand-logo-wrap">
+        <img src="assets/logo.png" alt="Khan Creative Studio" class="brand-logo-img">
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="about.html" class="nav-item">About</a>
+        <a href="services.html" class="nav-item active">Services</a>
+        <a href="package.html" class="nav-item">Packages</a>
+        <a href="reviews.html" class="nav-item">Reviews</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="cart.html" class="cart-icon-btn"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg><span class="cart-counter" style="display: none;">0</span></a>
+        <a href="contact.html" class="btn btn-primary btn-sm d-none-mobile">Get Started</a>
+        <button class="mobile-toggle-btn"><svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Service Detail Main -->
+  <main id="service-detail-container">
+    <!-- Header -->
+    <section style="background: linear-gradient(180deg, #F9FAFB 0%, #EDE9FE 100%); padding: 80px 0; border-bottom: 1px solid var(--color-borders);">
+      <div class="container">
+        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 16px;">
+          <a href="services.html" style="font-size: 0.9rem; color: var(--color-primary-purple); font-weight: 600;">← All Services</a>
+          <span style="color: var(--color-borders);">/</span>
+          <span class="section-tag mint" id="service-category" style="margin-bottom: 0;">Service</span>
+        </div>
+        <h1 id="service-title" style="margin-bottom: 16px;">Loading Service Details...</h1>
+        <div style="display: flex; gap: 24px; align-items: center; font-size: 0.95rem; color: var(--color-secondary-text); flex-wrap: wrap;">
+          <span>⏱ Estimated Delivery: <strong id="service-delivery">...</strong></span>
+          <span>● Quality Guarantee: <strong>100% Bespoke</strong></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content & Booking Section -->
+    <section class="section-pad">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 48px; align-items: start;">
+          <!-- Left Column: Description & Features -->
+          <div>
+            <div style="background: var(--color-white); border: 1px solid var(--color-borders); border-radius: var(--radius-lg); padding: 40px; margin-bottom: 32px; box-shadow: var(--shadow-sm);">
+              <div id="service-icon-box" class="service-icon-box" style="margin-bottom: 24px;"></div>
+              <h2 style="font-size: 1.6rem; margin-bottom: 20px;">Scope of Work & Technical Overview</h2>
+              <div id="service-desc" style="font-size: 1.05rem; line-height: 1.8; color: var(--color-secondary-text); margin-bottom: 36px;">
+                Loading full description...
+              </div>
+
+              <h3 style="font-size: 1.3rem; margin-bottom: 18px;">Deliverables & Specifications Included</h3>
+              <ul id="service-features" style="margin-bottom: 32px;">
+                <!-- Populated by JS -->
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right Column: Pricing & Booking Card -->
+          <div style="position: sticky; top: 100px;">
+            <div style="background: var(--color-white); border: 2px solid var(--color-mint-accent); border-radius: var(--radius-lg); padding: 36px; box-shadow: var(--shadow-lg);">
+              <span class="service-category-badge" style="color: var(--color-primary-purple);">Investment</span>
+              <div style="display: flex; align-items: baseline; gap: 6px; margin-top: 6px; margin-bottom: 20px;">
+                <span style="font-size: 0.9rem; color: var(--color-secondary-text);">Starting at</span>
+                <span id="service-price" style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 800; color: var(--color-dark-purple);">...</span>
+              </div>
+
+              <button id="service-add-cart-btn" class="btn btn-mint btn-block btn-lg" style="margin-bottom: 16px;">
+                Add to Cart
+              </button>
+              <a href="cart.html" class="btn btn-outline btn-block" style="margin-bottom: 30px;">
+                Go to Cart & Checkout
+              </a>
+
+              <hr style="border: 0; border-top: 1px solid var(--color-borders); margin-bottom: 24px;">
+
+              <!-- Direct Inquiry Form -->
+              <h4 style="margin-bottom: 14px;">Instant Booking Request</h4>
+              <p style="font-size: 0.85rem; color: var(--color-secondary-text); margin-bottom: 18px;">
+                Submit your inquiry directly to our creative directors. We will get back to you with a tailored brief within hours.
+              </p>
+
+              <form id="service-enquiry-form">
+                <div class="form-group" style="margin-bottom: 14px;">
+                  <label class="form-label" style="font-size: 0.82rem;">Your Name *</label>
+                  <input type="text" name="name" required class="form-control" placeholder="e.g. Tariq Khan" style="padding: 10px 14px;">
+                </div>
+                <div class="form-group" style="margin-bottom: 14px;">
+                  <label class="form-label" style="font-size: 0.82rem;">Email Address *</label>
+                  <input type="email" name="email" required class="form-control" placeholder="name@company.com" style="padding: 10px 14px;">
+                </div>
+                <div class="form-group" style="margin-bottom: 14px;">
+                  <label class="form-label" style="font-size: 0.82rem;">Phone / WhatsApp</label>
+                  <input type="tel" name="phone" class="form-control" placeholder="+92 300 1234567" style="padding: 10px 14px;">
+                </div>
+                <div class="form-group" style="margin-bottom: 14px;">
+                  <label class="form-label" style="font-size: 0.82rem;">Coupon Code (optional)</label>
+                  <div style="display: flex; gap: 8px;">
+                    <input type="text" name="coupon" id="enquiry-coupon-input" class="form-control" placeholder="e.g. KCSLAUNCH" style="padding: 10px 14px; text-transform: uppercase;">
+                    <button type="button" id="enquiry-coupon-btn" class="btn btn-outline" style="white-space: nowrap;">Apply</button>
+                  </div>
+                  <div id="enquiry-coupon-msg" style="font-size: 0.8rem; margin-top: 6px;"></div>
+                </div>
+                <div class="form-group" style="margin-bottom: 18px;">
+                  <label class="form-label" style="font-size: 0.82rem;">Project Notes *</label>
+                  <textarea name="message" required class="form-control" placeholder="Share your project goals, deadlines, or expectations..." style="min-height: 90px; padding: 10px 14px; font-size: 0.9rem;"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                  Send Booking Request
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="kcs-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col-brand">
+          <img src="assets/logo.png" alt="Khan Creative Studio Logo" style="height: 50px; background: white; padding: 4px 8px; border-radius: 6px; display: inline-block;">
+          <p data-footer-desc>Khan Creative Studio is an elite digital and creative solutions agency delivering bespoke website development, graphic design, social media marketing, and visual content.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="package.html">Packages</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-nav-list">
+            <li><a href="service.html?slug=website-development">Website Development</a></li>
+            <li><a href="service.html?slug=graphic-designing">Graphic Designing</a></li>
+            <li><a href="service.html?slug=logo-branding">Logo & Branding</a></li>
+            <li><a href="service.html?slug=ai-video-advertisements">AI Video Ads</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Direct Contact</h4>
+          <div class="footer-contact-item"><a href="mailto:khancreativestudio1@gmail.com" data-footer-email>khancreativestudio1@gmail.com</a></div>
+          <div class="footer-contact-item"><a href="tel:+923151342465" data-footer-phone>+92 315 1342465</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; <span data-current-year>2026</span> Khan Creative Studio. All Rights Reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="page.html?slug=privacy-policy">Privacy Policy</a>
+          <a href="page.html?slug=terms-and-conditions">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/service-detail.js"></script>
+</body>
+</html>
